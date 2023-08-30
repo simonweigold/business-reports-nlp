@@ -164,4 +164,5 @@ cython_debug/
 
 
 # folders
-reports_digipay/
+reports_digipay_pdf/
+reports_digipay_txt/
