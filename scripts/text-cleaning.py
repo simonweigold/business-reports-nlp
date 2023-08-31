@@ -1,13 +1,26 @@
 import os
+import re
 
+def traverse_and_clean(folder_path):
+    for root, dirs, files in os.walk(folder_path):
+        for file_name in files:
+            if file_name.endswith('.txt'):
+                file_path = os.path.join(root, file_name)
+                
+                # Read the file content
+                with open(file_path, 'r', encoding='utf-8') as file:
+                    raw_text = file.read()
+                
+                # Apply the cleaning function
+                cleaned_text = clean_text_no_linebreaks(raw_text)
+                
+                # Save the cleaned text back into the same file
+                with open(file_path, 'w', encoding='utf-8') as file:
+                    file.write(cleaned_text)
+
+# The cleaning function
 def clean_text_no_linebreaks(text):
-    text = ""
-    try:
-        with open(txt_path, 'r', encoding='utf-8') as f:
-            f = text
-            f.write(text)
-    except Exception as e:
-        print(e)
+    cleaned_text = []
     
     # Remove all line breaks to treat the text as one continuous string
     text = text.replace('\n', ' ')
@@ -48,22 +61,8 @@ def clean_text_no_linebreaks(text):
     
     return '\n'.join(cleaned_text)
 
-    try:
-        with open(txt_path, 'w', encoding='utf-8') as f:
-            f.write(cleaned_text)
-    except Exception as e:
-        print(e)
-
-def traverse_and_clean(folder):
-    for root, dirs, files in os.walk(folder):
-        for file in files:
-            if file.endswith('.txt'):
-                txt_path = os.path.join(root, file)
-                    
-                # Extract text and save as .txt
-                clean_text_no_linebreaks(txt_path)
 
 
 # Application
-folder = ""
+folder = "reports_digipay_txt"
 traverse_and_clean(folder)
