@@ -27,7 +27,7 @@ def traverse_and_convert(main_folder, output_folder):
                 # Extract text and save as .txt
                 extract_text_from_pdf(pdf_path, txt_path)
 
-# Example usage
+# Application
 main_folder = "reports_digipay_pdf"
 output_folder = "reports_digipay_txt"
 traverse_and_convert(main_folder, output_folder)
