@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const userInput = document.getElementById('userInput');
     const cleanedText = document.getElementById('cleanedText');
 
-    cleanTextButton.addEventListener('click', () => {
+    cleanTextButton.addEventListener('click', async () => {
         const inputText = userInput.value;
-        let cleaned = cleanText(inputText);
+        let cleaned = await cleanText(inputText);
         cleanedText.value = cleaned;
     });
 });
@@ -16,6 +16,9 @@ function cleanText(text) {
 
     // Ensure one space after punctuation marks
     cleaned = cleaned.replace(/([.!?;,:])(\S)/g, '$1 $2');
+
+    // Replace special symbol "" with "-"
+    // cleaned = cleaned.replace(//g, '-');
 
     return cleaned;
 }
