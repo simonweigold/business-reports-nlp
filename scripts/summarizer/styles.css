@@ -1,0 +1,39 @@
+body {
+    background-color: #070706;
+    min-width: 250px;
+    margin: auto;
+    font-family: 'IBM Plex Mono ', monospace; /* Use the chosen font or fallback to monospace */
+    text-align: center;
+  }
+
+.container {
+    width: 80%;
+    margin: auto;
+    color: whitesmoke;
+}
+
+textarea {
+    background: #637268;
+    border-color: #637268;
+    color: whitesmoke;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+button {
+    background: #141411;
+    color: whitesmoke;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    border-color: whitesmoke;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #637268;
+    color: whitesmoke;
+  }
