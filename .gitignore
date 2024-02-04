@@ -169,3 +169,6 @@ reports_digipay_txt/
 examples/
 scripts/topic-modelling/bertopic/backup from llama2 bertopic
 scripts/topic-modelling/bertopic/BERTopic-LLama2.ipynb - Colaboratory_files
+
+# data
+*.csv
