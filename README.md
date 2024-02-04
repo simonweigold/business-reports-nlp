@@ -5,7 +5,7 @@ This repository contains code and further ressources used and produced within th
 ![Methodology Flow Chart](https://github.com/simonweigold/business-reports-nlp/blob/main/figs/Methodology%20Flow%20Chart.png)
 
 ## Navigation
-The code displayed in this GitHub repository can be found in the [scripts fodler](https://github.com/simonweigold/business-reports-nlp/tree/main/scripts). It is structured chronologically:
+The code displayed in this GitHub repository can be found in the [scripts folder](https://github.com/simonweigold/business-reports-nlp/tree/main/scripts). It is structured chronologically:
 0. [Text was extracted from the PDF files](https://github.com/simonweigold/business-reports-nlp/blob/main/scripts/00.1_text_extraction.py) and [subsequently cleaned both automatically](https://github.com/simonweigold/business-reports-nlp/blob/main/scripts/00.2_text_cleaning.py) and manually.
 1. [The data stored in .txt files was prepared for the analysis, namely transformed into a dataframe and stores as a .csv file.](https://github.com/simonweigold/business-reports-nlp/blob/main/scripts/01_data_preparation.ipynb)
 2. [Samples were created for the various analysis steps, requiring manual work with samples of the data.](https://github.com/simonweigold/business-reports-nlp/blob/main/scripts/02_sampling.ipynb)
