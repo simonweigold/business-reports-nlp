@@ -174,4 +174,7 @@ scripts/topic-modelling/bertopic/BERTopic-LLama2.ipynb - Colaboratory_files
 *.csv
 *.xlsx
 *.json
+*.jsonl
 *.txt
+*.pdf
+*.html
