@@ -1,4 +1,4 @@
-# business-reports-nlp
+# Digital Payment Stories in Business Reports
 This repository contains code and further ressources used and produced within the project of analysing business reports in the context of my master's thesis.
 
 ## Navigation
